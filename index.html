@@ -4,389 +4,326 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEONVERSE | Gaming Universe</title>
+    <title>NEONVERSE | Street Racing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="site-header">
-    <a class="brand" href="#home">
-        <span class="brand-mark">N</span>
-        NEON<span>VERSE</span>
-    </a>
+    <!-- BACKGROUND VIDEO -->
+    <div class="video-backdrop">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9adIAd0zszGdmhUuNWL0lbrWlzklABYgL_9flVmZd7Q&s=10" type="video/mp4">
+        </video>
+    </div>
 
-    <button class="menu-toggle" id="menuToggle">☰</button>
+    <div class="screen-shade"></div>
 
-    <nav class="nav" id="nav">
-        <a href="#home">Home</a>
-        <a href="#games">Discover</a>
-        <a href="#categories">Categories</a>
-        <a href="#leaderboard">Leaderboard</a>
-    </nav>
+    <!-- NAVIGATION -->
+    <header class="topbar">
 
-    <a class="header-cta" href="#join">Join the squad ↗</a>
-</header>
+        <a class="brand" href="#home">
+            <i>N</i> NEON<span>VERSE</span>
+        </a>
 
-<main>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
-    <!-- HERO SECTION -->
+        <nav class="nav-links" id="navLinks">
+            <a class="active" href="#home">HOME</a>
+            <a href="#garage">GARAGE</a>
+            <a href="#modes">RACE MODES</a>
+            <a href="#leaderboard">LEADERBOARD</a>
+        </nav>
 
-    <section class="hero section-wrap" id="home">
+        <a class="top-cta" href="#garage">EXPLORE CARS ↗</a>
 
-        <div class="hero-copy">
+    </header>
 
-            <div class="eyebrow">
-                ● THE NEXT LEVEL STARTS HERE
-            </div>
+    <main>
 
-            <h1>
-                ENTER THE<br>
-                <span>GAMING</span><br>
-                UNIVERSE.
-            </h1>
+        <!-- HERO SECTION -->
+        <section class="hero section-wrap" id="home">
 
-            <p class="hero-text">
-                Discover legendary worlds, find your next obsession,
-                and connect with players who play to win.
-            </p>
+            <div class="hero-copy reveal">
 
-            <div class="hero-actions">
-                <a class="button button-primary" href="#games">
-                    Explore games →
-                </a>
+                <p class="eyebrow">
+                    <b></b> THE CITY NEVER SLEEPS
+                </p>
 
-                <a class="button button-ghost" href="#categories">
-                    ▶ Browse genres
-                </a>
-            </div>
+                <h1>
+                    RULE THE<br>
+                    <span>STREETS.</span>
+                </h1>
 
-            <div class="hero-stats">
-                <div>
-                    <strong>120+</strong>
-                    <small>GAMES TO EXPLORE</small>
+                <p class="hero-description">
+                    Push limits. Own the night. Build your legend on the asphalt.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="#modes">
+                        START YOUR ENGINE ↗
+                    </a>
+
+                    <a class="button ghost" href="#garage">
+                        EXPLORE GARAGE
+                    </a>
                 </div>
 
-                <div>
-                    <strong>48K</strong>
-                    <small>ACTIVE PLAYERS</small>
-                </div>
+                <div class="hero-stats">
 
-                <div>
-                    <strong>24/7</strong>
-                    <small>GAMING ENERGY</small>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="hero-art">
-
-            <div class="hero-image-frame">
-
-                <img
-                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1100&q=85"
-                    alt="Gaming setup"
-                >
-
-                <div class="image-shade"></div>
-
-                <div class="floating-tag tag-top">
-                    ● LIVE COMMUNITY
-                </div>
-
-                <div class="floating-tag tag-bottom">
-                    <small>FEATURED WORLD</small>
-                    <strong>BEYOND THE LIMIT</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FEATURED GAMES -->
-
-    <section class="games-section section-wrap" id="games">
-
-        <div class="section-heading">
-            <div>
-                <div class="eyebrow">PICK YOUR NEXT ADVENTURE</div>
-                <h2>FEATURED <span>GAMES</span></h2>
-            </div>
-        </div>
-
-        <div class="game-grid">
-
-            <article class="game-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1000&q=85"
-                    alt="Gaming controller"
-                >
-
-                <div class="card-overlay"></div>
-
-                <div class="game-info">
-                    <span class="game-type">ACTION / ADVENTURE</span>
-                    <h3>SHADOW<br>PROTOCOL</h3>
-                    <div class="card-bottom">
-                        ★★★★★ 4.9
+                    <div>
+                        <strong data-count="24">0</strong>
+                        <small>ELITE CARS</small>
                     </div>
-                </div>
 
-            </article>
-
-
-            <article class="game-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1493711662062-fa541f7f1b6b?auto=format&fit=crop&w=900&q=85"
-                    alt="Gaming console"
-                >
-
-                <div class="card-overlay"></div>
-
-                <div class="game-info">
-                    <span class="game-type">ARCADE / RACING</span>
-                    <h3>NEON<br>DRIFT</h3>
-                    <div class="card-bottom">
-                        ★★★★★ 4.8
+                    <div>
+                        <strong data-count="8">0</strong>
+                        <small>RACE TRACKS</small>
                     </div>
-                </div>
 
-            </article>
-
-
-            <article class="game-card">
-
-                <img
-                    src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=900&q=85"
-                    alt="Virtual reality gaming"
-                >
-
-                <div class="card-overlay"></div>
-
-                <div class="game-info">
-                    <span class="game-type">SCI-FI / RPG</span>
-                    <h3>VOID<br>RUNNER</h3>
-                    <div class="card-bottom">
-                        ★★★★★ 4.7
+                    <div>
+                        <strong data-count="120">0</strong>
+                        <small>TOP DRIVERS</small>
                     </div>
+
                 </div>
 
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- CATEGORIES -->
-
-    <section class="categories-section section-wrap" id="categories">
-
-        <div class="section-heading">
-            <div>
-                <div class="eyebrow">WHAT'S YOUR PLAYSTYLE?</div>
-                <h2>CHOOSE YOUR <span>REALM</span></h2>
-            </div>
-        </div>
-
-        <div class="category-grid">
-
-            <a href="#games" class="category-card">
-                <span class="category-icon">⚔</span>
-                <span>
-                    <strong>Action</strong>
-                    <small>Fast. Fierce. Fearless.</small>
-                </span>
-                ↗
-            </a>
-
-            <a href="#games" class="category-card">
-                <span class="category-icon">✦</span>
-                <span>
-                    <strong>Adventure</strong>
-                    <small>Worlds to get lost in.</small>
-                </span>
-                ↗
-            </a>
-
-            <a href="#games" class="category-card">
-                <span class="category-icon">⌁</span>
-                <span>
-                    <strong>Racing</strong>
-                    <small>Own every second.</small>
-                </span>
-                ↗
-            </a>
-
-            <a href="#games" class="category-card">
-                <span class="category-icon">◎</span>
-                <span>
-                    <strong>Sports</strong>
-                    <small>Compete for glory.</small>
-                </span>
-                ↗
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- LEADERBOARD -->
-
-    <section class="leaderboard-section section-wrap" id="leaderboard">
-
-        <div class="leaderboard-copy">
-
-            <div class="eyebrow">THE ELITE PLAYERS</div>
-
-            <h2>
-                THE HALL<br>
-                OF <span>FAME</span>
-            </h2>
-
-            <p>
-                Every match writes a story.
-                These players are writing legends.
-            </p>
-
-            <a href="#join" class="text-link">
-                Join the competition ↗
-            </a>
-
-        </div>
-
-
-        <div class="leaderboard-panel">
-
-            <div class="leaderboard-title">
-                WEEKLY LEADERBOARD
-                <span class="live-pill">● LIVE</span>
             </div>
 
-            <div class="leader-row">
-                <span class="rank">01</span>
-                <div class="avatar">AX</div>
+            <aside class="hero-side reveal">
 
-                <div class="player">
-                    <strong>ARXEN</strong>
-                    <small>Shadow Protocol</small>
+                <span class="vertical">NIGHT RACING / EST. 2026</span>
+
+                <div class="speed-card">
+
+                    <small>MAX SPEED</small>
+
+                    <strong>342<span> KM/H</span></strong>
+
+                    <div class="meter">
+                        <i></i>
+                    </div>
+
+                    <small>BUILT FOR THE LIMIT</small>
+
                 </div>
 
-                <strong class="score">98,450 XP</strong>
-            </div>
+            </aside>
 
+            <a class="scroll-cue" href="#garage">
+                ↓ &nbsp; SCROLL TO DISCOVER
+            </a>
 
-            <div class="leader-row">
-                <span class="rank">02</span>
-                <div class="avatar">NY</div>
+        </section>
 
-                <div class="player">
-                    <strong>NOVA_Y</strong>
-                    <small>Neon Drift</small>
+        <!-- GARAGE SECTION -->
+        <section class="content-section section-wrap" id="garage">
+
+            <div class="section-heading reveal">
+
+                <div>
+                    <p class="eyebrow">CHOOSE YOUR WEAPON</p>
+                    <h2>THE <span>GARAGE</span></h2>
                 </div>
 
-                <strong class="score">91,280 XP</strong>
+                <p>
+                    Precision engineering. Unmatched performance.<br>
+                    Pick the machine that fits your style.
+                </p>
+
             </div>
 
+            <div class="car-grid">
 
-            <div class="leader-row">
-                <span class="rank">03</span>
-                <div class="avatar">K7</div>
+                <article class="car-card reveal">
 
-                <div class="player">
-                    <strong>KRYPT7</strong>
-                    <small>Void Runner</small>
+                    <div class="car-image car-one">
+                        <b>01</b>
+                        <label>HYPERCAR</label>
+                    </div>
+
+                    <div class="car-info">
+                        <div>
+                            <h3>VORTEX GT</h3>
+                            <small>V8 TURBO · AWD</small>
+                        </div>
+
+                        <strong>342 <small>KM/H</small></strong>
+                    </div>
+
+                    <button class="text-button choose-car" data-car="VORTEX GT">
+                        VIEW DETAILS ↗
+                    </button>
+
+                </article>
+
+                <article class="car-card reveal">
+
+                    <div class="car-image car-two">
+                        <b>02</b>
+                        <label>SUPERCAR</label>
+                    </div>
+
+                    <div class="car-info">
+                        <div>
+                            <h3>PHANTOM R</h3>
+                            <small>V10 · RWD</small>
+                        </div>
+
+                        <strong>318 <small>KM/H</small></strong>
+                    </div>
+
+                    <button class="text-button choose-car" data-car="PHANTOM R">
+                        VIEW DETAILS ↗
+                    </button>
+
+                </article>
+
+                <article class="car-card reveal">
+
+                    <div class="car-image car-three">
+                        <b>03</b>
+                        <label>TRACK SPEC</label>
+                    </div>
+
+                    <div class="car-info">
+                        <div>
+                            <h3>APEX RS</h3>
+                            <small>V6 HYBRID · AWD</small>
+                        </div>
+
+                        <strong>305 <small>KM/H</small></strong>
+                    </div>
+
+                    <button class="text-button choose-car" data-car="APEX RS">
+                        VIEW DETAILS ↗
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- RACE MODES -->
+        <section class="content-section section-wrap" id="modes">
+
+            <div class="section-heading reveal">
+
+                <div>
+                    <p class="eyebrow">PICK YOUR CHALLENGE</p>
+                    <h2>RACE <span>MODES</span></h2>
                 </div>
 
-                <strong class="score">87,920 XP</strong>
+                <p>
+                    Every road has a story. Which one<br>
+                    will you make yours?
+                </p>
+
             </div>
 
+            <div class="mode-grid">
 
-            <div class="leader-row">
-                <span class="rank">04</span>
-                <div class="avatar">LX</div>
-
-                <div class="player">
-                    <strong>LUNAR_X</strong>
-                    <small>Shadow Protocol</small>
-                </div>
-
-                <strong class="score">82,610 XP</strong>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- JOIN SECTION -->
-
-    <section class="join-section section-wrap" id="join">
-
-        <div class="join-box">
-
-            <div class="eyebrow">YOUR NEXT LEVEL AWAITS</div>
-
-            <h2>
-                READY TO<br>
-                <span>RESPAWN?</span>
-            </h2>
-
-            <p>
-                Find your people. Discover new worlds.
-                Make every game count.
-            </p>
-
-            <form id="joinForm" class="join-form">
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email address"
-                    required
-                >
-
-                <button class="button button-primary" type="submit">
-                    Join the squad →
+                <button class="mode-card reveal" data-mode="CAREER MODE">
+                    <span>🏁</span>
+                    <small>01 / SOLO</small>
+                    <strong>CAREER MODE</strong>
+                    <p>Climb the ranks and become a legend.</p>
+                    <b>ENTER MODE ↗</b>
                 </button>
 
-            </form>
+                <button class="mode-card reveal" data-mode="TIME ATTACK">
+                    <span>⏱</span>
+                    <small>02 / TIME</small>
+                    <strong>TIME ATTACK</strong>
+                    <p>Beat the clock. Shave off milliseconds.</p>
+                    <b>ENTER MODE ↗</b>
+                </button>
 
-            <p id="formMessage"></p>
+                <button class="mode-card reveal" data-mode="SHOWDOWN">
+                    <span>⚡</span>
+                    <small>03 / VERSUS</small>
+                    <strong>SHOWDOWN</strong>
+                    <p>Challenge the leaderboard drivers.</p>
+                    <b>ENTER MODE ↗</b>
+                </button>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
 
-</main>
+        <!-- LEADERBOARD -->
+        <section class="leader-section section-wrap" id="leaderboard">
 
+            <div class="section-heading reveal">
 
-<!-- FOOTER -->
+                <div>
+                    <p class="eyebrow">THE FASTEST OF THE FAST</p>
+                    <h2>TOP <span>DRIVERS</span></h2>
+                </div>
 
-<footer class="footer section-wrap">
+                <label class="season">SEASON 01 · NIGHT RUN</label>
 
-    <a class="brand" href="#home">
-        NEON<span>VERSE</span>
-    </a>
+            </div>
 
-    <p>© 2026 NEONVERSE. GAME ON, YOUR WAY.</p>
+            <div class="leaderboard reveal">
 
-    <a href="#home">Back to top ↑</a>
+                <div class="leader-row head">
+                    <span>RANK</span>
+                    <span>DRIVER</span>
+                    <span>CAR</span>
+                    <span>POINTS</span>
+                </div>
 
-</footer>
+                <div class="leader-row">
+                    <b class="gold">01</b>
+                    <strong>GHOSTRIDER</strong>
+                    <span>VORTEX GT</span>
+                    <strong>9,840</strong>
+                </div>
 
+                <div class="leader-row">
+                    <b class="silver">02</b>
+                    <strong>NEONWOLF</strong>
+                    <span>PHANTOM R</span>
+                    <strong>9,210</strong>
+                </div>
 
-<script src="script.js"></script>
+                <div class="leader-row">
+                    <b class="bronze">03</b>
+                    <strong>DRIFTKING</strong>
+                    <span>APEX RS</span>
+                    <strong>8,760</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section-wrap">
+
+        <a class="brand" href="#home">
+            <i>N</i> NEON<span>VERSE</span>
+        </a>
+
+        <p>OWN THE NIGHT. RESPECT THE ROAD.</p>
+
+        <small>© 2026 NEONVERSE · FAN-MADE FRONTEND CONCEPT</small>
+
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
